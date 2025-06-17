@@ -23,7 +23,7 @@ Includes user authentication, category-based search, and Swagger documentation.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/nestjs-news-api.git
+git clone https://github.com/Ghifariezra/nestjs-news-api.git
 cd nestjs-news-api
 
 # Install dependencies using pnpm
