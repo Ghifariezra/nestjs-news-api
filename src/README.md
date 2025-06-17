@@ -8,7 +8,7 @@ Includes user authentication, category-based search, and Swagger documentation.
 - 🧾 Register & Login (Basic Auth with hashed passwords)
 - 🔐 JWT Authentication (secured endpoints)
 - 🔎 Filter by category and limit
-- 📄 Swagger API docs (`nestjs-news-api-production.up.railway.app`)
+- 📄 Swagger API docs [News-API](https://nestjs-news-api-production.up.railway.app/)
 - 🛠️ Built with NestJS, Prisma, PostgreSQL
 
 ## 🛠️ Tech Stack
