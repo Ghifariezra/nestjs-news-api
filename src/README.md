@@ -7,7 +7,6 @@ Includes user authentication, category-based search, and Swagger documentation.
 
 - 🧾 Register & Login (Basic Auth with hashed passwords)
 - 🔐 JWT Authentication (secured endpoints)
-- 📚 CRUD for News Articles
 - 🔎 Filter by category and limit
 - 📄 Swagger API docs (`/api/docs`)
 - 🛠️ Built with NestJS, Prisma, PostgreSQL
