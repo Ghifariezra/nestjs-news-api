@@ -1,10 +1,10 @@
-import {
-  Controller,
-  Get,
-  Param,
+import { 
+  Controller, 
+  Get, 
+  Param, 
   Query,
   UseGuards,
-} from '@nestjs/common';
+ } from '@nestjs/common';
 import {
   ApiTags,
   ApiQuery,
@@ -12,21 +12,21 @@ import {
   ApiOperation,
   ApiResponse,
 } from '@nestjs/swagger';
-import {
+import { 
   NewsService,
-} from './news.service';
+ } from './news.service';
 import {
   TestResponseDto,
   NewsDto,
   CategoryNewsDto,
   FindNewsDto,
 } from './dto/typeResponseNews';
-import {
+import { 
   AuthGuard,
-} from '@nestjs/passport';
+ } from '@nestjs/passport';
 
 @UseGuards(AuthGuard('jwt'))
-@ApiTags('News - Must be authenticated') // Group for Swagger UI
+@ApiTags('News') // Group for Swagger UI
 @Controller('/api/news')
 export class NewsController {
   constructor(private readonly articleService: NewsService) { }
