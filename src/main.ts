@@ -25,6 +25,6 @@ async function bootstrap() {
     customfavIcon: 'https://avatars.githubusercontent.com/u/127650295?v=4', // opsional
   });
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
