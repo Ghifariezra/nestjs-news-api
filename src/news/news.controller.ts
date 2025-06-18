@@ -42,7 +42,10 @@ export class NewsController {
   }
 
   @Get()
-  @ApiOperation({ summary: 'Get all news' })
+  @ApiOperation({
+    summary: 'Get all news',
+    description: 'Returns a list of all news articles, this data result merge all categories news',
+  })
   @ApiQuery({
     name: 'limit',
     required: false,
@@ -60,11 +63,14 @@ export class NewsController {
   }
 
   @Get('/category')
-  @ApiOperation({ summary: 'Get news by news' })
+  @ApiOperation({
+    summary: 'Get news by news',
+    description: 'Returns a list of news by category, you choice category by keyword and this is category name: apple, bitcoin, business, entertainment, health, sports, technology, tesla',
+  })
   @ApiQuery({
     name: 'keyword',
     required: true,
-    description: 'News category name: apple, bitcoin, business, entertainment, health, sports, technology, tesla',
+    description: 'News category name',
   })
   @ApiQuery({
     name: 'limit',
