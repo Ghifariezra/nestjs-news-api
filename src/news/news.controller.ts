@@ -64,7 +64,7 @@ export class NewsController {
   @ApiQuery({
     name: 'keyword',
     required: true,
-    description: 'News category name',
+    description: 'News category name: apple, bitcoin, business, entertainment, health, sports, technology, tesla',
   })
   @ApiQuery({
     name: 'limit',
