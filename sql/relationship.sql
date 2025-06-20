@@ -8,8 +8,6 @@ ORDER BY tc.table_name;
 
 ALTER TABLE article ADD PRIMARY KEY (id);
 
-
-
 ALTER TABLE news.apple ADD PRIMARY KEY (id);
 
 ALTER TABLE news.bitcoin ADD PRIMARY KEY (id);
