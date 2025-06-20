@@ -26,7 +26,7 @@ import {
 } from '@nestjs/passport';
 
 @UseGuards(AuthGuard('jwt'))
-@ApiTags('News - You must be should authenticated') // Group for Swagger UI
+@ApiTags('News') // Group for Swagger UI
 @Controller('/api/news')
 export class NewsController {
   constructor(private readonly articleService: NewsService) { }
